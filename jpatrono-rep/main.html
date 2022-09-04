@@ -163,21 +163,24 @@
 
         <div class="login-pop-up" id="logi-pop-up">
             <form action="">
-                <fieldset>
+                <fieldset class="login-fieldset">
+                    <legend>Login</legend>
                     <div>
                         <label for="nome-de-guerra" class="name">
                             Nome de Guerra
                         </label>
                         <input type="text" class="name-button" placeholder="Nome de Guerra" required name="name-button">
                     </div>
+                    <br>
                     <div>
                         <label for="email" class="email">
                             Email
                         </label>
                         <input type="email" class="email-button" placeholder="Email Institucional (@ime.eb.br" required name="email-button">
                     </div>
+                    <br>
                     <div class="form-div-ano-engenharia">
-                        <label for="Ano" class="ano">
+                        <label for="Ano" class="ano" >
                             Ano
                         </label>
                         <select name="Ano" id="Ano-select">
@@ -201,6 +204,9 @@
                             <option>SE/9</option>
                         </select>
                     </div>
+                    <br>
+                    <br>
+                    <input type="submit" name="login" class="login-submit">
                 </fieldset>    
             </form>
         </div>
