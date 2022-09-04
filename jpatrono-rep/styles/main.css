@@ -1,0 +1,79 @@
+.foto-ime-grid {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.foto-ime-div {
+    width: 100%;
+}
+
+.foto-ime{
+    width: 100%;
+}
+
+#iniciativas-title,
+#engenharias-title {
+    font-size: 20px;
+}
+
+.iniciativas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 15px;
+}
+
+.iniciativa-logo {
+    width: 100%;
+}
+
+.engenharias-grid {
+    background-color: red;
+    display: grid;
+    height: 350px;
+    gap: 8px;
+    grid-auto-flow: column;
+    place-items: center;
+}
+
+.engenharias-grid img {
+    width: 0;
+    min-width: calc(100% + 26px);
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    clip-path: polygon(25px 0, 100% 0, calc(100% - 25px) 100%, 0 100%);
+    transition: 0.5s;
+}
+
+#first-image {
+    min-width: calc(100% + 13px);
+    place-self: start;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 25px) 100%, 0 100%);
+}
+
+#last-image {
+    min-width: calc(100% + 13px);
+    place-self: end;
+    clip-path: polygon(26px 0, 100% 0,100%  100%, 0 100%);
+}
+
+.engenharias-grid img:hover {
+    width: 20vw;
+}
+
+
+
+@media (max-width: 700px) {
+    .iniciativas-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1050px) {
+    .iniciativas-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+

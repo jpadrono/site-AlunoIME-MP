@@ -1,0 +1,49 @@
+.header {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 10px ;
+    margin: 0px;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: gray;
+}
+
+.left-section {
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    padding: 8px 20px 8px 32px;
+}
+
+.right-section {
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.header-logo-ime {
+    width: 35px;
+    position: absolute;
+    left: 4px;
+}
+
+.header-iniciativas, 
+.header-contato,
+.header-sobre-o-ime,
+.header-engenharias{
+    background-color: blueviolet;
+    padding: 8px 12px;
+}
+
+.header-engenharias,
+.header-contato {
+    background: lightblue;
+}
