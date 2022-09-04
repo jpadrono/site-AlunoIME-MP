@@ -1,0 +1,17 @@
+.name-button, 
+.email-button {
+    width: 100%;
+}
+
+.form-div-ano-engenharia {
+    display: flex;
+    background-color: aquamarine;
+}
+
+.login-pop-up {
+    background-color: aqua;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}

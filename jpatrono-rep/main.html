@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="iso-8859-1">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/login.css">
 </head>
 
 <body>
     <header class="header">
         <div class="left-section">
-            <p>
-                <strong style="margin-right: 10px;">I M E</strong>A l u n o s
+            <p style="font-size: 14px;">
+                <strong style="margin-right: 6px;">I M E</strong> - <span style="margin-left: 6px; margin-right: 6px;">P ? g i n a</span> I n i c i a l
             </p>
             <img class="header-logo-ime" src="imagens/logoime.png" alt="logo do ime">
         </div>
@@ -158,6 +159,50 @@
             <a id="last-image-div" href="http://www.ime.eb.mil.br/engenharia-mecanica.html">
                 <img id="" src="imagens/engenharia-maut.jpg" alt="engenharia mec?nica">
             </a>
+        </div>
+
+        <div class="login-pop-up" id="logi-pop-up">
+            <form action="">
+                <fieldset>
+                    <div>
+                        <label for="nome-de-guerra" class="name">
+                            Nome de Guerra
+                        </label>
+                        <input type="text" class="name-button" placeholder="Nome de Guerra" required name="name-button">
+                    </div>
+                    <div>
+                        <label for="email" class="email">
+                            Email
+                        </label>
+                        <input type="email" class="email-button" placeholder="Email Institucional (@ime.eb.br" required name="email-button">
+                    </div>
+                    <div class="form-div-ano-engenharia">
+                        <label for="Ano" class="ano">
+                            Ano
+                        </label>
+                        <select name="Ano" id="Ano-select">
+                            <option>1? Ano</option>
+                            <option>2? Ano</option>
+                            <option>3? Ano</option>
+                            <option>4? Ano</option>
+                            <option>5? Ano</option>
+                        </select>
+                        <label for="engenharia" class="engenharia-label">
+                            Engenharia
+                        </label>
+                        <select name="engenhaira-select" id="engenharia-select">
+                            <option>SE/1</option>
+                            <option>SE/2</option>
+                            <option>SE/3</option>
+                            <option>SE/4</option>
+                            <option>SE/5</option>
+                            <option>SE/6</option>
+                            <option>SE/8</option>
+                            <option>SE/9</option>
+                        </select>
+                    </div>
+                </fieldset>    
+            </form>
         </div>
     </main>
 </body>
