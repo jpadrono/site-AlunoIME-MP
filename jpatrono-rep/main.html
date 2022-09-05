@@ -9,24 +9,54 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/nav.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="left-section">
+        <div class="middle-section">
             <p style="font-size: 14px;">
-                <strong style="margin-right: 6px;">I M E</strong> - <span style="margin-left: 6px; margin-right: 6px;">P ? g i n a</span> I n i c i a l
+                <strong style="margin-right: 6px;">I M E</strong> - <span style="margin-left: 6px; margin-right: 6px;">P á g i n a</span> I n i c i a l
             </p>
             <img class="header-logo-ime" src="imagens/logoime.png" alt="logo do ime">
-        </div>
-
-        <div class="right-section">
-            <div class="header-sobre-o-ime">S o b r e <span style="margin: 0px 10px">o</span> I M E</div>
-            <div class="header-engenharias">E n  g e n h a r i a s</div>
-            <div class="header-iniciativas">I n i c i a t i v a s</div>
-            <div class="header-contato">L o g i n</div>
+            <a href="#nav-sidebar">
+                <img class="hamburguer-icon" src="imagens/Hamburger_icon.svg.png" alt="hamburguer icon">
+            </a>
         </div>
     </header>
+
+    <nav id="nav-sidebar">
+        <a href="#close" title="close" class="close" id="close-navbar">
+            X
+        </a>
+        <a href="#login-pop-up">
+            <div class="header-login">
+                L o g i n
+            </div>
+        </a>
+        <a href="#sobreoime-title">
+            <div class="header-sobreoime">
+                S o b r e 
+                <span style="margin-left: 8px ;margin-right: 8px"> o </span> I M E
+            </div>
+        </a>
+        <a href="#iniciativas-title">
+            <div class="header-iniciativas">
+                I n i c i a t i v a s
+            </div>
+        </a>
+        <a href="#engenharias-title">
+            <div class="header-engenharias">      
+                E n g e n h a r i a s
+            </div>
+        </a>
+ 
+        <a href="#intercambio-title">
+            <div class="header-intercambio">
+                I n t e r c â m b i o s
+            </div>
+        </a>
+    </nav>
 
     <main>
         <div class="foto-ime-grid">
@@ -34,8 +64,22 @@
                 <img class="foto-ime" src="imagens/fotoime.png" alt="pr?dio do ime">
             </div>
         </div>
+
+        <div id="main-div-sobreoime">
+            <p id="sobreoime-title">
+                Sobre o IME
+            </p>
+            <div class="texto-sobreoime">
+                <p>
+                    O Instituto Militar de Engenharia (IME) é uma instituição de ensino superior pública pertencente ao Exército Brasileiro que oferece cursos de graduação e pós-graduação em Engenharia, sendo considerado um centro de excelência e referência nacional e internacional no ensino da Engenharia. Fica localizado na Urca, bairro da Zona Sul carioca, mais precisamente na Praia Vermelha, ao lado da estação do Bondinho do Pão de Açúcar. 
+                </p>
+            </div>
+        </div>
+
         <div>
-            <p id="iniciativas-title">Iniciativas de alunos</p>
+            <p id="iniciativas-title">
+                Iniciativas de alunos
+            </p>
         </div>
         <!--grid das iniciativas-->
         <div class="iniciativas-grid">
@@ -161,10 +205,11 @@
             </a>
         </div>
 
-        <div class="login-pop-up" id="logi-pop-up">
+        <div class="login-pop-up" id="login-pop-up">
+            <a href="#close" title="close" class="close">X</a>
             <form action="">
                 <fieldset class="login-fieldset">
-                    <legend>Login</legend>
+                    <legend class="login-legend">Login</legend>
                     <div>
                         <label for="nome-de-guerra" class="name">
                             Nome de Guerra
@@ -176,42 +221,48 @@
                         <label for="email" class="email">
                             Email
                         </label>
-                        <input type="email" class="email-button" placeholder="Email Institucional (@ime.eb.br" required name="email-button">
+                        <input type="email" class="email-button" placeholder="Email Institucional (@ime.eb.br)" required name="email-button">
                     </div>
                     <br>
                     <div class="form-div-ano-engenharia">
-                        <label for="Ano" class="ano" >
-                            Ano
-                        </label>
-                        <select name="Ano" id="Ano-select">
-                            <option>1? Ano</option>
-                            <option>2? Ano</option>
-                            <option>3? Ano</option>
-                            <option>4? Ano</option>
-                            <option>5? Ano</option>
-                        </select>
-                        <label for="engenharia" class="engenharia-label">
-                            Engenharia
-                        </label>
-                        <select name="engenhaira-select" id="engenharia-select">
-                            <option>SE/1</option>
-                            <option>SE/2</option>
-                            <option>SE/3</option>
-                            <option>SE/4</option>
-                            <option>SE/5</option>
-                            <option>SE/6</option>
-                            <option>SE/8</option>
-                            <option>SE/9</option>
-                        </select>
+                        <div class="div-ano">
+                            <label for="Ano" class="ano" >
+                                Ano
+                            </label>
+                            <select name="Ano" id="Ano-select">
+                                <option>1? Ano</option>
+                                <option>2? Ano</option>
+                                <option>3? Ano</option>
+                                <option>4? Ano</option>
+                                <option>5? Ano</option>
+                            </select>
+                        </div>
+                        <div class="div-engenharia">
+                            <label for="engenharia" class="engenharia-label">
+                                Engenharia
+                            </label>
+                            <select name="engenhaira-select" id="engenharia-select">
+                                <option>SE/1</option>
+                                <option>SE/2</option>
+                                <option>SE/3</option>
+                                <option>SE/4</option>
+                                <option>SE/5</option>
+                                <option>SE/6</option>
+                                <option>SE/8</option>
+                                <option>SE/9</option>
+                            </select>
+                        </div>  
                     </div>
                     <br>
                     <br>
-                    <input type="submit" name="login" class="login-submit">
+                    <button type="submit" class="login-submit-button">
+                        Login
+                    </button>
                 </fieldset>    
             </form>
-        </div>
+        </div>    
     </main>
-=======
+
     </main>
 
     <div class="login-pop-up" id="logi-pop-up">
@@ -247,5 +298,26 @@
         </form>
     </div>
 
+    <div id="intercambio-title">
+        <p> Intercâmbio </p>
+    </div>
+
+    <div class="intercambio-div">
+        <div class="locator" id="west-locator">
+        </div>
+        <div class="locator-info" id="ime-info"></div>
+        <div class="locator-info" id="west-info"></div>
+        <div class="locator-info" id="texas-info"></div>
+        <div class="locator-info" id="paris-info"></div>
+        <div class="locator" id="ime-locator">
+        </div>
+        <div class="locator" id="texas-locator">
+            <div class="locator-info" id="texas-info"></div>
+        </div>
+        <div class="locator" id="paris-locator">
+            <div class="locator-info" id="paris-info"></div>
+        </div>
+        <img class="mapa"  src="imagens/mapa.jpg" alt="mapa mundi">
+    </div>
 </body>
 </html>

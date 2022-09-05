@@ -12,8 +12,91 @@
     width: 100%;
 }
 
+.mapa{
+    object-fit: contain;
+    width: 100%;
+}
+
+.intercambio-div {
+    background-color: rgba(15, 15, 15, 0.8);
+    position: relative;
+}
+
+.locator-info{
+    background-color: rgba(128, 128, 128, 0.8);
+    width: 0;
+    height: 0;
+    min-width: 20vw;
+    min-height: 20vw;
+    opacity: 0;
+}
+
+#west-locator:hover #west-info{
+    opacity: 0.8;
+}
+
+.locator {
+    background-color: blue;
+    width: 0;
+    height: 0;
+    min-width: 2vw;
+    min-height: 2vw;
+    clip-path: circle();
+    cursor: pointer;
+    z-index: 2;
+}
+#west-info {
+    position:absolute;
+    top: 20.5%;
+    left: 22.5%;
+}
+
+#west-locator{
+    position: absolute;
+    top: 40.5%;
+    left: 20%;
+}
+
+#ime-info{
+    position: absolute;
+    top: 42.5%;
+    left: 30%;
+}
+
+#ime-locator{
+    position: absolute;
+    top: 62.5%;
+    left: 27.5%;
+}
+
+#texas-info{
+    position: absolute;
+    top:23.5%;
+    left: 13.1%;
+}
+
+#texas-locator{
+    position: absolute;
+    top: 43.5%;
+    left: 10.6%;
+}
+
+#paris-info{
+    position: absolute;
+    top: 18.5%;
+    left: 44%;
+}
+
+#paris-locator {
+    position: absolute;
+    top: 38.5%;
+    left: 41.5%
+}
+
 #iniciativas-title,
-#engenharias-title {
+#engenharias-title,
+#sobreoime-title,
+#intercambio-title {
     font-size: 20px;
 }
 
@@ -35,6 +118,7 @@
     gap: 8px;
     grid-auto-flow: column;
     place-items: center;
+    border: 15px double black;
 }
 
 .engenharias-grid img {
@@ -73,13 +157,16 @@
     clip-path: polygon(26px 0, 100% 0,100%  100%, 0 100%);
     transition:0.5s;
 }
-
 .engenharias-div:hover,
 #first-image-div:hover,
 #last-image-div:hover {
     width: 20vw;
 }
 
+.texto-sobreoime,
+.iniciativas-grid{
+    padding: 5px 15px;
+}
 
 @media (max-width: 700px) {
     .iniciativas-grid{
