@@ -12,8 +12,68 @@
     width: 100%;
 }
 
+.mapa{
+    object-fit: contain;
+    width: 100%;
+}
+
+.intercambio-div {
+    background-color: rgba(15, 15, 15, 0.8);
+    position: relative;
+}
+
+.locator-info{
+    background-color: rgba(128, 128, 128, 0.8);
+    width: 0;
+    height: 0;
+    min-width: 20vw;
+    min-height: 20vw;
+}
+
+#west-info {
+    position: absolute;
+    top: 20%;
+
+}
+
+.locator {
+    background-color: blue;
+    width: 0;
+    height: 0;
+    min-width: 2vw;
+    min-height: 2vw;
+    clip-path: circle();
+    cursor: pointer;
+}
+
+#west-locator{
+    position: absolute;
+    top: 40.5%;
+    left: 20%;
+}
+
+#ime-locator{
+    position: absolute;
+    top: 62.5%;
+    left: 27.5%;
+}
+
+#texas-locator{
+    position: absolute;
+    top: 43.5%;
+    left: 10.6%;
+}
+
+#paris-locator {
+    position: absolute;
+    top: 38.5%;
+    left: 41.5%
+}
+
 #iniciativas-title,
-#engenharias-title {
+#engenharias-title,
+#sobreoime-title,
+#intercambio-title {
     font-size: 20px;
 }
 

@@ -4,11 +4,15 @@
     left: 0;
     top: 53px;
     bottom: 0;
-    width: 270px;
+    width: 30%;
+    min-width: 200px;
     padding: 10px 10px 0px 3px;
     opacity: 0;
     pointer-events:none;
     z-index: 200;
+    -webkit-transition: opacity 150ms ease-in;
+    -moz-transition: opacity 150ms ease-in;
+    transition: opacity 150ms ease-in;
 }
 
 #nav-sidebar:target {
