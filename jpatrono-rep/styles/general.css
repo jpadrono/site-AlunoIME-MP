@@ -3,15 +3,8 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding-top: 54px;
-<<<<<<< Updated upstream
     padding-bottom: 50px ;
     padding-left: 0;
     padding-right: 0;
-=======
-    padding-right: 25px;
-    padding-left: 25px;
-}
-::-webkit-scrollbar{
-    
->>>>>>> Stashed changes
+    background-color: rgba(0, 0, 0, 0.493);
 }

@@ -1,5 +1,5 @@
 .foto-ime-grid {
-    background-color: lightblue;
+    background-color: rgba(0, 0, 0, 0.753);
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -15,6 +15,10 @@
 .mapa{
     object-fit: contain;
     width: 100%;
+    border: 3px solid black;
+    clip-path: polygon(0 80%, 0 330px,100% 330px, 100% 80%);
+    
+    
 }
 
 .intercambio-div {
@@ -39,6 +43,10 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease-in-out;
+}
+
+.intercambio-div p {
+    text-align: center;
 }
 
 a {
@@ -73,7 +81,7 @@ a {
 
 #west-locator{
     position: absolute;
-    top: 40.5%;
+    top: 41.5%;
     left: 20%;
 }
 
@@ -111,9 +119,9 @@ a {
 
 #paris-locator {
     position: absolute;
-    top: 38.5%;
-    left: 41.5%;
-    z-index: 0;
+    top: 40.5%;
+    left: 43%;
+    z-index: 1;
 }
 
 #iniciativas-title,
