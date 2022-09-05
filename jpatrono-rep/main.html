@@ -14,10 +14,12 @@
 
 <body>
     <header class="header">
-        <div class="middle-section">
-            <p style="font-size: 14px;">
-                <strong style="margin-right: 6px;">I M E</strong> - <span style="margin-left: 6px; margin-right: 6px;">P á g i n a</span> I n i c i a l
-            </p>
+        <div class="middle-section"> 
+            <a href="#foto-ime">
+                <p style="font-size: 14px; color: black;">
+                    <strong style="margin-right: 6px;">I M E</strong> - <span style="margin-left: 6px; margin-right: 6px;">P á g i n a</span> I n i c i a l
+                </p>
+            </a>
             <img class="header-logo-ime" src="imagens/logoime.png" alt="logo do ime">
             <a href="#nav-sidebar">
                 <img class="hamburguer-icon" src="imagens/Hamburger_icon.svg.png" alt="hamburguer icon">
@@ -61,12 +63,13 @@
     <main>
         <div class="foto-ime-grid">
             <div class="foto-ime-div">
-                <img class="foto-ime" src="imagens/fotoime.png" alt="pr?dio do ime">
+                <img class="foto-ime" id="foto-ime" src="imagens/fotoime.png" alt="pr?dio do ime">
             </div>
+            <h2 id="bemvindoime" style="font: size 10px;">Bem vindo ao IME</h2>
         </div>
-
+        <p id="sobreoime-title"></p><br><br>
         <div id="main-div-sobreoime">
-            <h3 id="sobreoime-title" style="text-align: center;">
+            <h3  style="text-align: center;">
                 Sobre o IME
             </h3>
             <div class="texto-sobreoime">
@@ -75,9 +78,9 @@
                 </p>
             </div>
         </div>
-
+        <p id="iniciativas-title"></p><br><br>
         <div>
-            <h3 id="iniciativas-title" style="text-align:center;">
+            <h3  style="text-align:center;">
                 Iniciativas de alunos
             </h3>
         </div>
@@ -163,8 +166,9 @@
             </div>
         </div>
         <!--A ideia aqui ? mostrar as engenharias ao passar o mouse sobre a se??o correspondente-->
+        <p id="engenharias-title"></p><br><br>
         <div>
-            <h3 id="engenharias-title" style="text-align: center;">
+            <h3 style="text-align: center;">
                 Engenharias
             </h3>
         </div>
@@ -291,9 +295,9 @@
             </label>
         </form>
     </div>
-
-    <div id="intercambio-title">
-        <h3 style="text-align: center;"> Intercâmbio </h3>
+    <p id="intercambio-title"></p><br><br>
+    <div >
+        <h3 style="text-align: center;"> Intercâmbios </h3>
     </div>
 
     <div class="intercambio-div">
