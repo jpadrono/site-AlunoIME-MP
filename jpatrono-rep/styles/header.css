@@ -61,3 +61,14 @@
 
 @media (max-width: 670px) {
 }
+
+/*Mudanças para a página do aluno*/
+
+.header-perfil-icon {
+    width: 40px;
+    position: absolute;
+    left: 70px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
