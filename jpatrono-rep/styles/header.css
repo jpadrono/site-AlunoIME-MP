@@ -1,7 +1,7 @@
 .header {
     height: 45px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 4px 10px ;
     margin: 0px;
     border: 1px solid black;
@@ -14,44 +14,47 @@
     background-color: gray;
 }
 
-.left-section {
-    background-color: lightblue;
+.hamburguer-icon {
+    width: 30px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate( 0, -50%);
+}
+
+.middle-section {
     display: flex;
     align-items: center;
     min-width:222px;
     padding: 8px 10px 8px 10px;
 }   
 
-.right-section {
-    background-color: lightpink;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    min-width: 410px;
-}
-
 .header-logo-ime {
     width: 35px;
     position: absolute;
-    left: 4px;
+    right: 20px;
     z-index: -1;
 }
 
 .header-iniciativas, 
 .header-login,
-.header-engenharias{
-    padding: 8px 12px;
-    transition: background-color 0.15s;
+.header-engenharias,
+.header-sobreoime,
+.header-intercambio{
+    padding: 8px 5px;
+    transition: background-color 0.15s, letter-spacing 0.15s;
 }
 
 .header-iniciativas:hover, 
 .header-login:hover,
-.header-engenharias:hover {
+.header-engenharias:hover,
+.header-sobreoime:hover,
+.header-intercambio:hover {
     background-color: rgb(125, 125, 125);
+    letter-spacing: 0.35px;
 }
 
-.right-section a {
+#nav-sidebar a {
     text-decoration: none;
     color: black;
 }

@@ -9,38 +9,53 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/nav.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="left-section">
+        <div class="middle-section">
             <p style="font-size: 14px;">
-                <strong style="margin-right: 6px;">I M E</strong> - <span style="margin-left: 6px; margin-right: 6px;">P ? g i n a</span> I n i c i a l
+                <strong style="margin-right: 6px;">I M E</strong> - <span style="margin-left: 6px; margin-right: 6px;">P á g i n a</span> I n i c i a l
             </p>
             <img class="header-logo-ime" src="imagens/logoime.png" alt="logo do ime">
-        </div>
-
-        <div class="right-section">
-            <a href="#engenharias-title">
-                <div class="header-engenharias">      
-                    E n g e n h a r i a s
-                </div>
+            <a href="#nav-sidebar">
+                <img class="hamburguer-icon" src="imagens/Hamburger_icon.svg.png" alt="hamburguer icon">
             </a>
-            <a href="#iniciativas-title">
-                <div class="header-iniciativas">
-                    I n i c i a t i v a s
-                </div>
-            </a>
-            <a href="#login-pop-up">
-                <div class="header-login">
-                    L o g i n
-                </div>
-            </a>
-            <div class="header-login">
-            
-            </div>
         </div>
     </header>
+
+    <nav id="nav-sidebar">
+        <a href="#close" title="close" class="close" id="close-navbar">
+            X
+        </a>
+            <div class="header-login">
+                L o g i n
+            </div>
+        </a>
+        <a href="#sobreoime-title">
+            <div class="header-sobreoime">
+                S o b r e 
+                <span style="margin-left: 8px ;margin-right: 8px"> o </span> I M E
+            </div>
+        </a>
+        <a href="#iniciativas-title">
+            <div class="header-iniciativas">
+                I n i c i a t i v a s
+            </div>
+        </a>
+        <a href="#engenharias-title">
+            <div class="header-engenharias">      
+                E n g e n h a r i a s
+            </div>
+        </a>
+ 
+        <a href="">
+            <div class="header-intercambio">
+                I n t e r c â m b i o s
+            </div>
+        </a>
+    </nav>
 
     <main>
         <div class="foto-ime-grid">
@@ -48,6 +63,18 @@
                 <img class="foto-ime" src="imagens/fotoime.png" alt="pr?dio do ime">
             </div>
         </div>
+
+        <div id="main-div-sobreoime">
+            <p id="sobreoime-title">
+                Sobre o IME
+            </p>
+            <div class="texto-sobreoime">
+                <p>
+                    O Instituto Militar de Engenharia (IME) é uma instituição de ensino superior pública pertencente ao Exército Brasileiro que oferece cursos de graduação e pós-graduação em Engenharia, sendo considerado um centro de excelência e referência nacional e internacional no ensino da Engenharia. Fica localizado na Urca, bairro da Zona Sul carioca, mais precisamente na Praia Vermelha, ao lado da estação do Bondinho do Pão de Açúcar. 
+                </p>
+            </div>
+        </div>
+
         <div>
             <p id="iniciativas-title">
                 Iniciativas de alunos
@@ -234,7 +261,7 @@
             </form>
         </div>    
     </main>
-=======
+
     </main>
 
     <div class="login-pop-up" id="logi-pop-up">

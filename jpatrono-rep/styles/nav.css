@@ -1,0 +1,29 @@
+#nav-sidebar {
+    background-color: red;
+    position: fixed;
+    left: 0;
+    top: 53px;
+    bottom: 0;
+    width: 270px;
+    padding: 10px 10px 0px 3px;
+    opacity: 0;
+    pointer-events:none;
+    z-index: 200;
+}
+
+#nav-sidebar:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#close-navbar {
+    position: absolute;
+    left: 9px;
+    top: -40px;
+    width: 40px;
+    background-color: gray;
+    border: none;
+    box-shadow: none;
+    font: 50px;
+    font-weight: 600;
+}
