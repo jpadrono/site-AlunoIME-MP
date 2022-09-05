@@ -100,8 +100,12 @@
 
 #iniciativas-title,
 #engenharias-title,
+<<<<<<< Updated upstream
 #sobreoime-title,
 #intercambio-title {
+=======
+#sobre-o-ime-title {
+>>>>>>> Stashed changes
     font-size: 20px;
 }
 
@@ -121,14 +125,16 @@
     display: grid;
     height: 350px;
     gap: 8px;
-    grid-auto-flow: column;
+    grid-auto-flow:column;
     place-items: center;
     border: 15px double black;
 }
 
-.engenharias-grid img {
+.engenharias-grid div{
     width: 0;
+    height: 0;
     min-width: calc(100% + 26px);
+<<<<<<< Updated upstream
     height: 100%;
     object-fit: cover;
 }
@@ -137,12 +143,15 @@
     width: 0;
     height: 0;
     min-width: calc(100% + 26px);
+=======
+>>>>>>> Stashed changes
     min-height: 100%;
     cursor: pointer;
     clip-path: polygon(26px 0, 100% 0, calc(100% - 26px) 100%, 0 100%);
     transition: 0.5s;
 }
 
+<<<<<<< Updated upstream
 #first-image-div {
     min-width: calc(100% + 13px);
     clip-path: polygon(0 0, 100% 0, calc(100% - 26px) 100%, 0 100%);
@@ -154,6 +163,35 @@
 }
 
 #last-image-div {
+=======
+.engenharias-grid a {
+    display: block;
+    width: 0;
+    height: 0;
+    min-width: calc(100% + 26px);
+    min-height: 100%;
+    cursor: pointer;
+    clip-path: polygon(25px 0, 100% 0, calc(100% - 25px) 100%, 0 100%);
+    transition: 0.5s;
+}
+
+
+.engenharia-logo {
+    min-width: calc(100% + 26px);
+    min-height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#first-image{
+    clip-path: polygon(0 0, 100% 0, calc(100% - 25px) 100%, 0 100%);
+    place-self: start;
+    min-width: calc(100% + 13px);
+}  
+
+#last-image {
+>>>>>>> Stashed changes
     min-width: calc(100% + 13px);
     min-height: 100%;
     width: 0;
@@ -162,9 +200,14 @@
     clip-path: polygon(26px 0, 100% 0,100%  100%, 0 100%);
     transition:0.5s;
 }
+<<<<<<< Updated upstream
 .engenharias-div:hover,
 #first-image-div:hover,
 #last-image-div:hover {
+=======
+
+.engenharias-grid a:hover {
+>>>>>>> Stashed changes
     width: 20vw;
 }
 
