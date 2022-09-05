@@ -22,90 +22,105 @@
     position: relative;
 }
 
+.info-image{
+    width: 100%
+}
+
+
 .locator-info{
-    background-color: rgba(128, 128, 128, 0.8);
-    width: 0;
-    height: 0;
-    min-width: 20vw;
-    min-height: 20vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(128, 128, 128);
+    position:absolute;
+    border: 2px groove black;
+    width: 30vw;
+    top: -20vw;
+    left: 3vw;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
 }
 
-.ime-locator:hover .locator-info{
-    opacity: 1;
+a {
+    text-decoration: none;
 }
 
+.info-text{
+    color: rgb(19, 4, 4);
+}
 
+.locator:hover .locator-info{
+    z-index:100
+}
 
 .locator {
     background-color: blue;
     width: 0;
     height: 0;
-    min-width: 2vw;
-    min-height: 2vw;
-    clip-path: circle();
+    min-width: 1vw;
+    min-height: 1vw;
+    border-radius: 50%;
     cursor: pointer;
     z-index: 2;
-}
-.west-info {
-    position:absolute;
-    top: 20.5%;
-    left: 22.5%;
-    opacity: 0;
+    transition: all 0.2s ease-in-out;
 }
 
-.west-locator{
+.locator:hover{
+    min-width: 2vw;
+    min-height: 2vw;
+}
+
+
+#west-locator{
     position: absolute;
     top: 40.5%;
     left: 20%;
 }
 
-.ime-info{
-    position: absolute;
-    top: 42.5%;
-    left: 30%;
-    opacity: 0;
+#west-locator:hover #west-info{
+    opacity: 1;
+    z-index: 100;
 }
 
-.ime-locator{
+#ime-locator:hover #ime-info{
+    opacity: 1;
+    z-index: 100;
+}
+
+#texas-locator:hover #texas-info{
+    opacity: 1;
+    z-index: 100;
+}
+
+#paris-locator:hover #paris-info{
+    opacity: 1;
+}
+
+#ime-locator{
     position: absolute;
     top: 62.5%;
-    left: 27.5%;
+    left: 28.5%;
 }
 
-.texas-info{
-    position: absolute;
-    top:23.5%;
-    left: 13.1%;
-    opacity: 0;
-}
-
-.texas-locator{
+#texas-locator {
     position: absolute;
     top: 43.5%;
     left: 10.6%;
 }
 
-.paris-info{
-    position: absolute;
-    top: 18.5%;
-    left: 44%;
-    opacity: 0;
-}
 
-.paris-locator {
+#paris-locator {
     position: absolute;
     top: 38.5%;
-    left: 41.5%
+    left: 41.5%;
+    z-index: 0;
 }
 
 #iniciativas-title,
 #engenharias-title,
-<<<<<<< Updated upstream
 #sobreoime-title,
-#intercambio-title {
-=======
+#intercambio-title 
 #sobre-o-ime-title {
->>>>>>> Stashed changes
     font-size: 20px;
 }
 
@@ -130,41 +145,8 @@
     border: 15px double black;
 }
 
-.engenharias-grid div{
-    width: 0;
-    height: 0;
-    min-width: calc(100% + 26px);
-<<<<<<< Updated upstream
-    height: 100%;
-    object-fit: cover;
-}
 
-.engenharias-div{
-    width: 0;
-    height: 0;
-    min-width: calc(100% + 26px);
-=======
->>>>>>> Stashed changes
-    min-height: 100%;
-    cursor: pointer;
-    clip-path: polygon(26px 0, 100% 0, calc(100% - 26px) 100%, 0 100%);
-    transition: 0.5s;
-}
-
-<<<<<<< Updated upstream
-#first-image-div {
-    min-width: calc(100% + 13px);
-    clip-path: polygon(0 0, 100% 0, calc(100% - 26px) 100%, 0 100%);
-    width: 0;
-    min-height: 100%;
-    height: 0;
-    place-self: start;
-    transition: 0.5s;
-}
-
-#last-image-div {
-=======
-.engenharias-grid a {
+.engenharias-grid a{
     display: block;
     width: 0;
     height: 0;
@@ -183,7 +165,6 @@
     object-fit: cover;
 }
 
-
 #first-image{
     clip-path: polygon(0 0, 100% 0, calc(100% - 25px) 100%, 0 100%);
     place-self: start;
@@ -191,7 +172,6 @@
 }  
 
 #last-image {
->>>>>>> Stashed changes
     min-width: calc(100% + 13px);
     min-height: 100%;
     width: 0;
@@ -200,14 +180,10 @@
     clip-path: polygon(26px 0, 100% 0,100%  100%, 0 100%);
     transition:0.5s;
 }
-<<<<<<< Updated upstream
-.engenharias-div:hover,
-#first-image-div:hover,
-#last-image-div:hover {
-=======
 
-.engenharias-grid a:hover {
->>>>>>> Stashed changes
+#first-image:hover,
+#last-image:hover,
+.engenharia-div:hover {
     width: 20vw;
 }
 
