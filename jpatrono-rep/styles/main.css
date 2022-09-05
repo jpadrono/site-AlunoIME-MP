@@ -28,12 +28,11 @@
     height: 0;
     min-width: 20vw;
     min-height: 20vw;
+    opacity: 0;
 }
 
-#west-info {
-    position: absolute;
-    top: 20%;
-
+#west-locator:hover #west-info{
+    opacity: 0.8;
 }
 
 .locator {
@@ -44,6 +43,12 @@
     min-height: 2vw;
     clip-path: circle();
     cursor: pointer;
+    z-index: 2;
+}
+#west-info {
+    position:absolute;
+    top: 20.5%;
+    left: 22.5%;
 }
 
 #west-locator{
@@ -52,16 +57,34 @@
     left: 20%;
 }
 
+#ime-info{
+    position: absolute;
+    top: 42.5%;
+    left: 30%;
+}
+
 #ime-locator{
     position: absolute;
     top: 62.5%;
     left: 27.5%;
 }
 
+#texas-info{
+    position: absolute;
+    top:23.5%;
+    left: 13.1%;
+}
+
 #texas-locator{
     position: absolute;
     top: 43.5%;
     left: 10.6%;
+}
+
+#paris-info{
+    position: absolute;
+    top: 18.5%;
+    left: 44%;
 }
 
 #paris-locator {

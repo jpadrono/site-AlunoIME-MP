@@ -39,7 +39,6 @@
 }
 
 
-
 #login-pop-up:target {
     opacity: 1;
     pointer-events: auto;
