@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bem Vindo ao IME</title>
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/general.css">
@@ -14,10 +14,12 @@
 
 <body>
     <header class="header">
-        <div class="middle-section">
-            <p style="font-size: 14px;">
-                <strong style="margin-right: 6px;">I M E</strong> - <span style="margin-left: 6px; margin-right: 6px;">P á g i n a</span> I n i c i a l
-            </p>
+        <div class="middle-section"> 
+            <a href="#foto-ime">
+                <p style="font-size: 14px; color: black;">
+                    <strong style="margin-right: 6px;">I M E</strong> - <span style="margin-left: 6px; margin-right: 6px;">P á g i n a</span> I n i c i a l
+                </p>
+            </a>
             <img class="header-logo-ime" src="imagens/logoime.png" alt="logo do ime">
             <a href="#nav-sidebar">
                 <img class="hamburguer-icon" src="imagens/Hamburger_icon.svg.png" alt="hamburguer icon">
@@ -61,29 +63,30 @@
     <main>
         <div class="foto-ime-grid">
             <div class="foto-ime-div">
-                <img class="foto-ime" src="imagens/fotoime.png" alt="pr?dio do ime">
+                <img class="foto-ime" id="foto-ime" src="imagens/fotoime.png" alt="pr?dio do ime">
             </div>
+            <h2 id="bemvindoime" style="font: size 10px;">Bem vindo ao IME</h2>
         </div>
-
+        <p id="sobreoime-title"></p><br><br>
         <div id="main-div-sobreoime">
-            <p id="sobreoime-title">
+            <h3  style="text-align: center;">
                 Sobre o IME
-            </p>
+            </h3>
             <div class="texto-sobreoime">
                 <p>
                     O Instituto Militar de Engenharia (IME) é uma instituição de ensino superior pública pertencente ao Exército Brasileiro que oferece cursos de graduação e pós-graduação em Engenharia, sendo considerado um centro de excelência e referência nacional e internacional no ensino da Engenharia. Fica localizado na Urca, bairro da Zona Sul carioca, mais precisamente na Praia Vermelha, ao lado da estação do Bondinho do Pão de Açúcar. 
                 </p>
             </div>
         </div>
-
+        <p id="iniciativas-title"></p><br><br>
         <div>
-            <p id="iniciativas-title">
+            <h3  style="text-align:center;">
                 Iniciativas de alunos
-            </p>
+            </h3>
         </div>
         <!--grid das iniciativas-->
         <div class="iniciativas-grid">
-            <div class="iniciativa-preview" style="background-color: lightpink;">
+            <div class="iniciativa-preview" >
                 <div class="iniciativa-logo-div">
                     <img  class="iniciativa-logo" src="imagens/logoimejunior.jpg" alt="logo da ime júnior"> 
                 </div>
@@ -92,7 +95,7 @@
                     </p>
                 </div>
             </div>
-            <div class="iniciativa-preview" style="background-color: lightblue;">
+            <div class="iniciativa-preview" >
                 <div class="iniciativa-logo-div">
                     <img  class="iniciativa-logo" src="imagens/imeceos.png" alt="logo da ime júnior"> 
                 </div>
@@ -101,7 +104,7 @@
                     </p>
                 </div>
             </div>
-            <div class="iniciativa-preview" style="background-color: lightpink;">
+            <div class="iniciativa-preview" >
                 <div class="iniciativa-logo-div">
                     <img  class="iniciativa-logo" src="imagens/roboime.jpg" alt="logo da ime júnior"> 
                 </div>
@@ -111,7 +114,7 @@
                     </p>
                 </div>
             </div>
-            <div class="iniciativa-preview" style="background-color: lightblue;">
+            <div class="iniciativa-preview" >
                 <div class="iniciativa-logo-div">
                     <img  class="iniciativa-logo" src="imagens/ecoime.png" alt="logo da ime júnior"> 
                 </div>
@@ -121,7 +124,7 @@
                     </p>
                 </div>
             </div>
-            <div class="iniciativa-preview" style="background-color: lightpink;">
+            <div class="iniciativa-preview" >
                 <div class="iniciativa-logo-div">
                     <img  class="iniciativa-logo" src="imagens/stemime.jpg" alt="logo da ime júnior"> 
                 </div>
@@ -131,7 +134,7 @@
                     </p>
                 </div>
             </div>
-            <div class="iniciativa-preview" style="background-color: lightblue;">
+            <div class="iniciativa-preview" >
                 <div class="iniciativa-logo-div">
                     <img  class="iniciativa-logo" src="imagens/grifoime.jpg" alt="logo da ime júnior"> 
                 </div>
@@ -141,7 +144,7 @@
                     </p>
                 </div>
             </div>
-            <div class="iniciativa-preview" style="background-color: lightpink;">
+            <div class="iniciativa-preview" >
                 <div class="iniciativa-logo-div">
                     <img  class="iniciativa-logo" src="imagens/matime.jpg" alt="logo da ime júnior"> 
                 </div>
@@ -151,7 +154,7 @@
                     </p>
                 </div>
             </div>
-            <div class="iniciativa-preview" style="background-color: lightblue;">
+            <div class="iniciativa-preview" >
                 <div class="iniciativa-logo-div">
                     <img  class="iniciativa-logo" src="imagens/imesec.jpg" alt="logo da ime júnior"> 
                 </div>
@@ -163,10 +166,11 @@
             </div>
         </div>
         <!--A ideia aqui ? mostrar as engenharias ao passar o mouse sobre a se??o correspondente-->
+        <p id="engenharias-title"></p><br><br>
         <div>
-            <p id="engenharias-title">
+            <h3 style="text-align: center;">
                 Engenharias
-            </p>
+            </h3>
         </div>
         <div class="engenharias-grid">
            
@@ -199,20 +203,9 @@
             </a>    
         </div>
 
-        <div>
-            <p id="sobre-o-ime-title">
-                Sobre o IME
-            </p>
-        </div>
-        <div>
-            <p>
-                O Instituto Militar de Engenharia (IME) ? uma institui??o de ensino superior p?blica pertencente ao Ex?rcito Brasileiro que oferece cursos de gradua??o e p?s-gradua??o em Engenharia, sendo considerado um centro de excel?ncia e refer?ncia nacional e internacional no ensino da Engenharia. Fica localizado na Urca, bairro da Zona Sul carioca, mais precisamente na Praia Vermelha, ao lado da esta??o do Bondinho do P?o de A??car.
-            </p>
-        </div>
-
         <div class="login-pop-up" id="login-pop-up">
             <a href="#close" title="close" class="close">X</a>
-            <form action="">
+            <form action="pag_do_aluno.html">
                 <fieldset class="login-fieldset">
                     <legend class="login-legend">Login</legend>
                     <div>
@@ -260,20 +253,51 @@
                     </div>
                     <br>
                     <br>
-                        <button type="submit" class="login-submit-button">
-                            <a href="pag_do_aluno.html"> Login</a>
-                        </button>
+                    <button type="submit" class="login-submit-button">
+                        <i class="fa fa-paper-plane"></i> Login
+                    </button>
                 </fieldset>    
             </form>
         </div>    
-
+    </main>
 
     </main>
 
-
-
-    <div id="intercambio-title">
-        <p> Intercâmbio </p>
+    <div class="login-pop-up" id="logi-pop-up">
+        <form action="">
+            <div>
+                <label for="nome-de-guerra" class="name">
+                    Nome de Guerra
+                </label>
+                <input type="text" class="name-button" placeholder="Nome de Guerra" required name="name-button">
+            </div>
+            <div>
+                <label for="email" class="email">
+                    Email
+                </label>
+                <input type="email" class="email-button" placeholder="Email Institucional (@ime.eb.br" required name="email-button">
+            </div>
+            <div>
+                <label for="Ano" class="ano">
+                    Ano
+                </label>
+                <select name="Ano" id="Ano-select">
+                    <option>1? Ano</option>
+                    <option>2? Ano</option>
+                    <option>3? Ano</option>
+                    <option>4? Ano</option>
+                    <option>5? Ano</option>
+                </select>
+                
+            </div>
+            <label for="email">
+                Email
+            </label>
+        </form>
+    </div>
+    <p id="intercambio-title"></p><br><br>
+    <div >
+        <h3 style="text-align: center;"> Intercâmbios </h3>
     </div>
 
     <div class="intercambio-div">
@@ -289,7 +313,7 @@
             <div class="locator" id="ime-locator">
                 <div class="locator-info" id="ime-info">
                     <img class="info-image" src="imagens/fotoime.png" alt="">
-                    <p class="info-text">United States Military Academy at Wast Point's</p>
+                    <p class="info-text">Instituto Militar de Engenharia</p>
 
                 </div>
             </div>
@@ -298,7 +322,7 @@
             <div class="locator" id="texas-locator">
                 <div class="locator-info" id="texas-info">
                     <img class="info-image" src="imagens/foto-texas.jfif" alt="">
-                    <p class="info-text">United States Military Academy at Wast Point's</p>
+                    <p class="info-text">Texas Tech University</p>
 
                 </div>
             </div>
@@ -307,7 +331,7 @@
             <div class="locator" id="paris-locator">
                 <div class="locator-info" id="paris-info">
                     <img class="info-image" src="imagens/foto-paris.jfif" alt="">
-                    <p class="info-text">United States Military Academy at Wast Point's</p>
+                    <p class="info-text">Paris Institute of Technology</p>
 
                 </div>
             </div>

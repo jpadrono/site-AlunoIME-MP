@@ -1,5 +1,5 @@
 .foto-ime-grid {
-    background-color: lightblue;
+    background-color: rgba(0, 0, 0, 0.753);
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -15,6 +15,7 @@
 .mapa{
     object-fit: contain;
     width: 100%;
+    border-top: 3px solid rgba(0, 0, 0, 0.493);
 }
 
 .intercambio-div {
@@ -39,6 +40,10 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease-in-out;
+}
+
+.intercambio-div p {
+    text-align: center;
 }
 
 a {
@@ -73,7 +78,7 @@ a {
 
 #west-locator{
     position: absolute;
-    top: 40.5%;
+    top: 28.5%;
     left: 20%;
 }
 
@@ -98,22 +103,22 @@ a {
 
 #ime-locator{
     position: absolute;
-    top: 62.5%;
+    top: 69.5%;
     left: 28.5%;
 }
 
 #texas-locator {
     position: absolute;
-    top: 43.5%;
+    top: 31.5%;
     left: 10.6%;
 }
 
 
 #paris-locator {
     position: absolute;
-    top: 38.5%;
-    left: 41.5%;
-    z-index: 0;
+    top: 27%;
+    left: 42.8%;
+    z-index: 1;
 }
 
 #iniciativas-title,
@@ -136,13 +141,13 @@ a {
 }
 
 .engenharias-grid {
-    background-color: red;
+    background-color: black;
     display: grid;
     height: 350px;
     gap: 8px;
     grid-auto-flow:column;
     place-items: center;
-    border: 15px double black;
+    border: 8px double black;
 }
 
 
@@ -202,4 +207,17 @@ a {
     .iniciativas-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+}
+
+#bemvindoime {
+    background-color: rgba(255, 255, 255, 0.507);
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
+
+.foto-ime-grid {
+    position: relative;
 }
