@@ -1,0 +1,49 @@
+
+table h3 {
+    text-align: center;
+}
+.red:hover {
+    background-color: red;
+    color: white;
+}
+.green:hover {
+    background-color: green;
+    color: white;
+}
+.tabela {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 413px;
+    width: 50vw;
+}
+
+td {
+    font-size: 150%;
+}
+th {
+    font-size: 150%;
+
+}
+.tabelacima {
+    
+
+}
+.tabela-notas {
+   
+
+}
+#tabelacima {
+    width: 100%;
+    min-width: 413px;
+}
+#tabela-notas {
+    width: 100%;
+    min-width: 413px;
+
+}
