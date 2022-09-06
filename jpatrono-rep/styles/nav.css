@@ -4,8 +4,8 @@
     left: 0;
     top: 54px;
     bottom: 0;
-    width: 25%;
-    min-width: 200px;
+    width: 30%;
+    min-width: 242px;
     padding: 10px 10px 0px 3px;
     opacity: 0;
     pointer-events:none;
@@ -24,12 +24,16 @@
 #close-navbar {
     position: absolute;
     left: 4.8px;
-    top: -40px;
+    top: -38px;
     width: 50px;
+    height: 20px;
     background-color: gray;
     border: none;
     box-shadow: none;
     font: 50px;
-    font-weight: 600;
-    
+    font-weight: 600;   
+}
+
+#nav-email {
+    font-size: 12px;
 }

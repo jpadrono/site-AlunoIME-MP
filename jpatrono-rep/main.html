@@ -32,29 +32,29 @@
             X
         </a>
         <a href="#login-pop-up">
-            <div class="header-login">
+            <div class="header-nav">
                 L o g i n
             </div>
         </a>
         <a href="#sobreoime-title">
-            <div class="header-sobreoime">
+            <div class="header-nav">
                 S o b r e 
                 <span style="margin-left: 8px ;margin-right: 8px"> o </span> I M E
             </div>
         </a>
         <a href="#iniciativas-title">
-            <div class="header-iniciativas">
+            <div class="header-nav">
                 I n i c i a t i v a s
             </div>
         </a>
         <a href="#engenharias-title">
-            <div class="header-engenharias">      
+            <div class="header-nav">      
                 E n g e n h a r i a s
             </div>
         </a>
  
         <a href="#intercambio-title">
-            <div class="header-intercambio">
+            <div class="header-nav">
                 I n t e r c â m b i o s
             </div>
         </a>
@@ -202,7 +202,6 @@
                 <img class="engenharia-logo"  src="imagens/engenharia-maut.jpg" alt="engenharia mec?nica">
             </a>    
         </div>
-
         <div class="login-pop-up" id="login-pop-up">
             <a href="#close" title="close" class="close">X</a>
             <form action="pag_do_aluno.html">
@@ -228,6 +227,7 @@
                                 Ano
                             </label>
                             <select name="Ano" id="Ano-select">
+                                <option disabled selected value="">Selecione</option>
                                 <option>1? Ano</option>
                                 <option>2? Ano</option>
                                 <option>3? Ano</option>
@@ -240,6 +240,8 @@
                                 Engenharia
                             </label>
                             <select name="engenhaira-select" id="engenharia-select">
+                                <option disabled selected value="">Selecione</option>
+
                                 <option>SE/1</option>
                                 <option>SE/2</option>
                                 <option>SE/3</option>
@@ -263,38 +265,6 @@
 
     </main>
 
-    <div class="login-pop-up" id="logi-pop-up">
-        <form action="">
-            <div>
-                <label for="nome-de-guerra" class="name">
-                    Nome de Guerra
-                </label>
-                <input type="text" class="name-button" placeholder="Nome de Guerra" required name="name-button">
-            </div>
-            <div>
-                <label for="email" class="email">
-                    Email
-                </label>
-                <input type="email" class="email-button" placeholder="Email Institucional (@ime.eb.br" required name="email-button">
-            </div>
-            <div>
-                <label for="Ano" class="ano">
-                    Ano
-                </label>
-                <select name="Ano" id="Ano-select">
-                    <option>1? Ano</option>
-                    <option>2? Ano</option>
-                    <option>3? Ano</option>
-                    <option>4? Ano</option>
-                    <option>5? Ano</option>
-                </select>
-                
-            </div>
-            <label for="email">
-                Email
-            </label>
-        </form>
-    </div>
     <p id="intercambio-title"></p><br><br>
     <div >
         <h3 style="text-align: center;"> Intercâmbios </h3>

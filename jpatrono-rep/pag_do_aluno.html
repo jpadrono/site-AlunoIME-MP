@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página do aluno</title>
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/paginadoalunno.css">
+    <link rel="stylesheet" href="styles/email.css">
+    <link rel="preconnect" href="https://fonts.google.com/specimen/Roboto">
 </head>
 
 <body>  
@@ -32,32 +33,41 @@
             X
         </a>
         <a href="https://granito.ime.eb.br/Granito/SisGradWeb/default.htm">
-            <div class="header-nota">
+            <div class="header-nav">
                 N o t a s
             </div>
         </a>
 
         <a href="https://consultaredebie.decex.eb.mil.br/pergamum/biblioteca/index.php">
-            <div class="header-pergamum">P e r g a m u m</div> 
+            <div class="header-nav">P e r g a m u m</div> 
         </a>
 
         <a href="https://granito.ime.eb.br/Granito/SisGradWeb/default.htm">
-            <div class="header-menu"> C a r d á p i o</div>   
+            <div class="header-nav"> C a r d á p i o</div>   
         </a>
 
         <a href="https://classroom.google.com/">
-            <div class="header-googleclass"> <Span style="margin-right: 6px;"> G o o g l e </Span> C l a s s r o m </div> 
+            <div class="header-nav"> <Span style="margin-right: 6px;"> G o o g l e </Span> C l a s s r o m </div> 
         </a>
 
         <a href="https://dliportal.zbra.com.br/Login.aspx?key=ime">
-            <div class="header-minhabi"> <Span style="margin-right: 6px;">M i n h a</Span> B i b l i o t e c a </div> <Span 
+            <div class="header-nav"> <Span style="margin-right: 6px;">M i n h a</Span> B i b l i o t e c a </div> <Span 
         </a>
         <a href="http://intraime.ime.eb.br/">
-            <div class="header-intraime"> I n t r a i m e </div> 
+            <div class="header-nav"> I n t r a i m e </div> 
         </a>
         <a href="http://intraime.ime.eb.br/ensino/pgepesq.html">
-            <div class="header-pgepesq"> P G E P e s q </div> 
+            <div class="header-nav"> P G E P e s q </div> 
         </a>
+        <div style="position: absolute; bottom: 30px;>
+            <p style="font-size:16px">seção psicopedagógica</p>
+            <a href="#email-pop-up">
+                <div class="header-nav" id="nav-email"> 
+                    c o n t a t o
+                </div>
+            </a>
+        </div>
+        
     </nav>
 
     <main>
@@ -86,5 +96,44 @@
           </div>
     </main>
     
+    <div class="email-pop-up" id="email-pop-up">
+        <form action="#close">
+            <div class="big-flex-box">
+                <a href="#close" title="close" class="close">X</a>
+                <div class="top-email-div" id="new-message-div">
+                    <legend class="email-legend">New Message</legend>
+                    <div class="top-right-email-box">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="bottom-email-div">
+                    <div class="top-email-div">
+                        <div class="inside-top-div">
+                            From: bizoinho@ime.eb.br
+                        </div>
+                    </div>
+                    <div class="top-email-div">
+                        <div class="inside-top-div">
+                            to: psicopedagogia@ime.eb.br
+                        </div>
+                    </div>
+                    <div class="email-content-div">
+                        <textarea name="email-content" class="email-content" cols="71" rows="16"
+                        required></textarea>
+                    </div>
+                    <div class="bottom-tool-div">           
+                        <button type="submit"   class="email-send-buttom">
+                            <i class="fa fa-paper-plane"></i>
+                            Send 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>    
+
+
 </body>
 </html>
