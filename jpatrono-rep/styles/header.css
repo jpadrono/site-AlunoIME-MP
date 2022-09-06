@@ -40,7 +40,14 @@
 .header-login,
 .header-engenharias,
 .header-sobreoime,
-.header-intercambio{
+.header-intercambio,
+.header-nota,
+.header-pergamum,
+.header-menu,
+.header-googleclass,
+.header-minhabi,
+.header-intraime,
+.header-pgepesq{
     padding: 8px 5px;
     transition: background-color 0.15s, letter-spacing 0.15s;
 }
@@ -49,7 +56,14 @@
 .header-login:hover,
 .header-engenharias:hover,
 .header-sobreoime:hover,
-.header-intercambio:hover {
+.header-intercambio:hover
+.header-nota:hover,
+.header-pergamum:hover,
+.header-menu:hover,
+.header-googleclass:hover,
+.header-minhabi:hover,
+.header-intraime:hover,
+.header-pgepesq:hover {
     background-color: rgb(125, 125, 125);
     letter-spacing: 0.8px;
 }
